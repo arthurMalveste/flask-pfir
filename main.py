@@ -7,12 +7,11 @@ import datetime
 from datetime import date, datetime, timezone, timedelta
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://Arthur_Malveste:Amm.22.01.78@localhost/portaria'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://portaria_xgw7_user:67o65aAyM9aahzZrcEFYNpfGj9WBqORP@dpg-cl4nn3h828mc73cvtbrg-a.oregon-postgres.render.com/portaria_xgw7'
 app.config['TIMEZONE'] = 'America/Sao_Paulo'  # Substitua pelo seu fuso horário
 db = SQLAlchemy(app)
 
 
-app = Flask(__name__)
 
 
 @app.route('/')
